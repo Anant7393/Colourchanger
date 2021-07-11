@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Changer</title>
+    <style>
+        #clickMe{
+            height:  100%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      top: 50%;
+      left: 50%;
+        }
+    </style>
+</head>
+<body id="hh">
+    <button id="clickMe">Click</button>
+    <script>
+        document.getElementById('clickMe').addEventListener('click', function() {
+        const months = ["red", "yellow", "coral", "green", "blue", "grey", "black"];
+        const random = Math.floor(Math.random() * months.length);
+        document.getElementById('hh').style.background = months[random];
+        });
+    </script>
+</body>
+</html>
